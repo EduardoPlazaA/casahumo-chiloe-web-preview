@@ -39,6 +39,10 @@
   iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
   .noframe{ padding:24px 16px; text-align:center; font-size:.9rem; }
   .noframe a{ color:var(--ember); }
+  .legal{ flex:0 0 auto; margin:0; padding:10px 16px; padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));
+          background:var(--ash); border-top:1px solid var(--line); font-size:.78rem; line-height:1.5; text-align:center; color:var(--bone); }
+  .legal a{ color:var(--bone); text-decoration:underline; text-underline-offset:2px; }
+  .legal a:hover{ color:#fff; }
   @media (max-width:420px){ .brand span{ display:none; } .back{ padding:8px 12px; font-size:.78rem; } }
 </style>
 </head>
@@ -56,6 +60,7 @@
             loading="eager"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  <p class="legal">Al reservar aceptas nuestra <a href="../legal.html#privacidad" target="_blank" rel="noopener">política de privacidad</a> y las <a href="../legal.html#terminos" target="_blank" rel="noopener">condiciones de reserva</a>. Cancelación sin costo hasta 24 horas antes.</p>
   <noscript class="noframe">
     Para reservar necesitas JavaScript activado.
     <a href="https://script.google.com/macros/s/AKfycbxfyXHNaGl8e5pW71JRiO-z7sEqW3CfVbxzVckvH-xO8jqyY6tiCaftxIrY5ZErXjqlZg/exec">Abrir el formulario de reservas</a>.
